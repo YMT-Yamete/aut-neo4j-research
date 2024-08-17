@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version
+Auckland Transport,http://www.aucklandtransport.govt.nz,en,20240724,20241020,VDV_Merge_110_1_F_2_223.08584791748406623459334442640CU18

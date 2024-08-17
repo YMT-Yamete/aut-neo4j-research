@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version
+Auckland Transport,http://www.aucklandtransport.govt.nz,en,20240605,20240910,VDV_EOD_109_5_E_218.08584834185570513274267823652CU19
