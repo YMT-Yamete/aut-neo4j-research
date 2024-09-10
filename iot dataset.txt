@@ -1,0 +1,19 @@
+https://www.kaggle.com/datasets/fedesoriano/traffic-prediction-dataset
+
+This dataset contains 48.1k (48120) observations of the number of vehicles each hour in four different junctions:
+1) DateTime
+2) Juction
+3) Vehicles
+4) ID
+
+------------------------
+
+https://www.kaggle.com/datasets/hasibullahaman/traffic-prediction-dataset
+
+------------------------
+
+https://www.kaggle.com/datasets/anthonytherrien/futureflow-navigating-tomorrows-urban-traffic
+
+------------------------
+
+https://www.kaggle.com/datasets/arnavsmayan/urban-mobility-dataset
