@@ -19,10 +19,12 @@ def get_all_bus_stops(session):
 # Step 2: Simulate traffic, weather, and incidents between bus stops
 def simulate_connection_data(session, stop1, stop2):
     traffic_flow = random.randint(0, 100)
-    weather = random.choice(['Clear', 'Rain'])
+
+    # Weather condition probabilities: Clear 90%, Rain 5%, Fog 5%
+    weather = random.choices(['Clear', 'Rain', 'Fog'], weights=[90, 5, 5])[0]
     
-    # Incident likelihood is now 99% no incident and 1% incident
-    incidents = random.choices([0, 1], weights=[99, 1])[0]
+    # Incident likelihood: 0 (No Incident) 999 times out of 1000, 1 (Incident) 1 time out of 1000
+    incidents = random.choices([0, 1], weights=[999, 1])[0]
 
     query = """
     MATCH (stop1:BusStop {name: $stop1})-[r:CONNECTS_TO]->(stop2:BusStop {name: $stop2})
@@ -35,7 +37,8 @@ def simulate_connection_data(session, stop1, stop2):
 
 # Step 3: Simulate waiting people at each bus stop
 def simulate_waiting_people(session, stop):
-    waiting_people = random.randint(0, 30)
+    # Number of waiting people, max limit set to 15
+    waiting_people = random.randint(0, 15)
 
     query = """
     MATCH (stop:BusStop {name: $stop})
